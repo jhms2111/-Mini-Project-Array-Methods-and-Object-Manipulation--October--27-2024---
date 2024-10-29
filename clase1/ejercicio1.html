@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <ul id="lista-produtos">
+        <!-- A lista de produtos vai ser gerada aqui -->
+    </ul>
+
+    <h2>Carrinho de Compras</h2>
+    <ul id="lista-carrinho">
+        <!-- A lista de produtos no carrinho vai ser gerada aqui -->
+    </ul>
+    <p id="total">Total: R$ 0,00</p>
+
+    <button id="calcular-total">Calcular Total</button>
+    <button id="filtrar-vegetariano">Exibir Apenas Vegetarianos</button>
+    <button id="filtrar-nao-vegetariano">Exibir Apenas Não Vegetarianos</button>
+    <button id="ordenar-crescente">Ordenar por Preço Crescente</button>
+    <button id="ordenar-decrescente">Ordenar por Preço Decrescente</button>
+
+    <input type="text" id="pesquisar-produto" placeholder="Pesquisar por nome" />
+
+    <script src="/27.10.2024/clase1/ejercicio1.js"></script>
+</body>
+</html>
